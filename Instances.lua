@@ -1,8 +1,8 @@
-local HelperTable = require('data/daemonLib/HelperTable')
-local HelperCreature = require('data/daemonLib/HelperCreature')
-local HelperString = require('data/daemonLib/HelperString')
-local HelperSystem = require('data/daemonLib/HelperSystem')
-local Core = require('data/daemonLib/Core')
+local HelperTable = require('data/DaemonTibiaLib/HelperTable')
+local HelperCreature = require('data/DaemonTibiaLib/HelperCreature')
+local HelperString = require('data/DaemonTibiaLib/HelperString')
+local HelperSystem = require('data/DaemonTibiaLib/HelperSystem')
+local Core = require('data/DaemonTibiaLib/Core')
 
 HString = HelperString.new()
 HTable = HelperTable.new()
