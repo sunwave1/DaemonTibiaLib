@@ -21,14 +21,14 @@ function HelperCreature:getCreaturesInRange(from, to, callback)
 end                                                          
 
 function HelperCreature:getCreaturesInRangeNames(from, to)
-    local creaturesName = self:getCreatureInRange(from, to, function(uid, t) 
+    local creaturesName = self:getCreaturesInRange(from, to, function(uid, t) 
         table.insert(t, getCreatureName(uid)) 
     end)
     return table.concat(creaturesName, ",")
 end
 
 function HelperCreature:getCreaturesMoreHealthInRange(from, to)
-    local creatures = self:getCreatureInRange(from, to, function(uid, t) 
+    local creatures = self:getCreaturesInRange(from, to, function(uid, t) 
         table.insert(t, {
             creatureId = uid,
             health = getCreatureHealth(uid)
